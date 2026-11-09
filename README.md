@@ -1,59 +1,70 @@
-# Sistema EVE — Demo pública
+# Sistema EVE
 
-POS Android en Flutter + Firebase para un negocio ficticio de comida rápida
-("La Esquina Demo"). Es la versión pública y segura del proyecto real
-Sistema EVE, que Juan Carlos Martínez Mendoza desarrolló para un negocio
-real con unos 100 clientes al día.
-
-> Demo, no producción: no contiene datos, precios ni credenciales reales.
-> Para correrla necesitas tu propio proyecto Firebase (ver `DEMO-SETUP.md`).
+Aplicación Android de punto de venta para restaurantes y negocios de
+comida rápida, desarrollada en Flutter con Firebase. La uso todos los
+días en un negocio real con alrededor de 100 clientes al día, con
+órdenes sincronizadas en tiempo real entre meseros, cocina, bar y caja.
 
 ## Qué hace
 
-- **Meseros:** crean órdenes por mesa o para llevar, con modificadores.
-- **Cocina / Bar:** ven las órdenes por sección y marcan listas.
-- **Caja:** confirma el pago, hace el corte de caja y exporta reportes.
-- **Administración:** menú, inventario, mesas, usuarios y reportes (PDF y CSV).
+- **Meseros:** creo órdenes por mesa o para llevar, con modificadores
+  y notas por producto.
+- **Cocina / Bar:** cada sección ve solo sus órdenes y marca los
+  platillos listos.
+- **Caja:** confirmo el pago, hago el corte de caja y exporto reportes.
+- **Administración:** gestiono menú, inventario, mesas, usuarios y
+  reportes con exportación a PDF y CSV.
 
-## Lo que se arregló en este refactor
-
-- **Doble descuento de inventario:** antes el stock se descontaba al crear
-  la orden y otra vez al confirmar el pago. Ahora se descuenta una sola
-  vez, al confirmar el pago, en la misma transacción que marca la orden
-  como pagada, con bandera `inventoryDeducted` para que reintentar no
-  descuente dos veces.
-- **Órdenes atómicas:** la creación usa transacción de Firestore y un
-  contador transaccional para el número de orden del día, sin duplicados
-  aunque dos meseros creen órdenes a la vez.
-- **Cancelar ya no borra:** una orden cancelada queda como `cancelled`
-  en el historial, y el stock se restaura solo si ya se había descontado.
-- **CSV real:** exportación CSV en Admin → Reportes, además del PDF.
-- **Inventario con historial:** `adjustStock` por fin escribe en
-  `inventory_movements`.
-- **Limpieza:** 10 dependencias muertas quitadas, 138 avisos de análisis
-  corregidos, 22 rutas muertas borradas, widgets grandes divididos
-  (`table_grid_widget`, `create_order_screen`, `cashier_dashboard`).
-- **UI/UX por rol:** caja con total grande y botón CONFIRMAR a ancho
-  completo; cocina/bar con conteos por pestaña y estado por sección.
+El inventario se descuenta una sola vez por orden, al confirmar el
+pago, y cada movimiento queda registrado. Las órdenes se crean de
+forma atómica, así que dos meseros pueden trabajar a la vez sin
+duplicar números ni sobrescribir el stock. Cancelar una orden la deja
+en el historial como cancelada y restaura el stock cuando corresponde.
 
 ## Stack
 
-Flutter, Dart, Riverpod, Firebase (Auth, Firestore, Storage, Analytics),
-Clean Architecture por features.
+Flutter, Dart, Riverpod, Firebase (Auth, Cloud Firestore, Storage y
+Analytics), Clean Architecture por features.
 
-## Cómo correr la demo
+## Instalación
 
-Ver [DEMO-SETUP.md](DEMO-SETUP.md). Resumen: `flutter pub get`,
-crea un proyecto Firebase demo, genera `lib/firebase_options.dart` con
-`flutterfire configure`, carga los datos de ejemplo y corre con
-`flutter run`.
+```bash
+flutter pub get
+flutter analyze
+flutter test
+flutter run
+```
 
-## Tests
+### Configuración de Firebase
 
-`flutter test` — hay tests para idempotencia de inventario y para el
-generador CSV. Verificado en esta VM (ver `VERIFICACION.md`): Flutter
-3.47.9, `flutter analyze` 0 errores, 24/24 tests, `flutter build web`
-OK. Falta compilar el APK en una PC con Android SDK.
+Necesitas tu propio proyecto Firebase:
+
+1. Crea un proyecto en Firebase Console y activa Auth
+   (correo/contraseña), Cloud Firestore y Storage.
+2. Genera la configuración con FlutterFire CLI:
+   ```bash
+   dart pub global activate flutterfire_cli
+   flutterfire configure
+   ```
+   Esto crea `lib/firebase_options.dart` y
+   `android/app/google-services.json`. Esos archivos no se suben al
+   repositorio (están en `.gitignore`).
+3. Despliega las reglas y los índices incluidos:
+   ```bash
+   firebase deploy --only firestore:rules,firestore:indexes
+   ```
+
+### Datos de ejemplo
+
+Para probar la app, crea en Firestore:
+
+- **Usuarios** (uno por rol): admin, mesero, cocina, bar y caja.
+- **Menú** (`menu_items`): por ejemplo, Hamburguesa Clásica 85,
+  Hamburguesa Doble 120, Papas Fritas 45, Refresco 30, Agua 20,
+  Hot Dog 60, Alitas 6 pzas 95, Nachos 70 (MXN).
+- **Mesas** (`tables`): Mesa 1 a Mesa 8, más "Para llevar".
+- **Inventario** (`inventory_items`): Pan, Carne, Queso, Papas y
+  Refresco, con stock inicial de 100 unidades cada uno.
 
 ## Estructura
 
@@ -70,4 +81,8 @@ lib/
     waiter/    # órdenes, mesas, pagos
 ```
 
-Informe completo del refactor: [REFACTOR-REPORT.md](REFACTOR-REPORT.md)
+## Autor
+
+Juan Carlos Martínez Mendoza — Desarrollador Flutter / Android.
+GitHub: [Juancm0](https://github.com/Juancm0) · LinkedIn:
+[juancm-mendoza](https://www.linkedin.com/in/juancm-mendoza)

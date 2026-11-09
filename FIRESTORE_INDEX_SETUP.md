@@ -27,7 +27,7 @@ El módulo de Mesero utiliza queries en Firestore que filtran por tipo de orden 
 ### Método 1: Automático (Recomendado) ✅
 
 1. **Ejecuta la aplicación** en tu dispositivo
-2. **Inicia sesión como mesero** (demo@demo.local / (crear en tu proyecto Firebase demo))
+2. **Inicia sesión como mesero** (mesero@tu-proyecto.com / (tu contraseña))
 3. **Ve al tab "Para Llevar"** o **"Mis Órdenes"**
 4. **Intenta ver/crear una orden**
 5. Firestore mostrará un error con un **link directo**
@@ -60,7 +60,7 @@ firebase deploy --only firestore:indexes
 ### Método 3: Crear Manualmente en Firebase Console
 
 1. Ve a [Firebase Console](https://console.firebase.google.com/)
-2. Selecciona tu proyecto "sistema-eve-demo"
+2. Selecciona tu proyecto de Firebase
 3. En el menú lateral, ve a **Firestore Database** → **Indexes**
 4. Click en **Create Index**
 
@@ -118,7 +118,7 @@ Una vez creado el índice:
 ```bash
 npm install -g firebase-tools
 firebase login
-firebase use sistema-eve-demo
+firebase use tu-proyecto
 ```
 
 ---
@@ -175,7 +175,7 @@ El archivo ya tiene configurado el índice necesario:
 ```bash
 npm install -g firebase-tools
 firebase login
-firebase use sistema-eve-demo
+firebase use tu-proyecto
 ```
 
 ---
