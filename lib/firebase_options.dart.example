@@ -1,0 +1,15 @@
+// PLANTILLA — NO es la config real.
+// Copia este archivo como lib/firebase_options.dart y genera el tuyo
+// con `flutterfire configure` en TU proyecto Firebase demo.
+// Nunca subas el archivo real a GitHub.
+import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
+import 'package:flutter/foundation.dart'
+    show defaultTargetPlatform, kIsWeb, TargetPlatform;
+
+class DefaultFirebaseOptions {
+  static FirebaseOptions get currentPlatform {
+    throw UnsupportedError(
+      'Falta lib/firebase_options.dart. Genera tu config demo con flutterfire configure.',
+    );
+  }
+}

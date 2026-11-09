@@ -1,0 +1,123 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // ===== FUNCIONES HELPER =====
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function getUserRole() {
+      return isAuthenticated() 
+        ? get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role 
+        : null;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && getUserRole() == 'admin';
+    }
+    
+    function isWaiter() {
+      return isAuthenticated() && getUserRole() == 'waiter';
+    }
+    
+    function isKitchen() {
+      return isAuthenticated() && getUserRole() == 'kitchen';
+    }
+    
+    function isBar() {
+      return isAuthenticated() && getUserRole() == 'bar';
+    }
+    
+    function isCashier() {
+      return isAuthenticated() && getUserRole() == 'cashier';
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    // ===== COLECCIONES =====
+    
+    // Users - Admin puede crear usuarios O un usuario puede crear su propio documento
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow create: if isAdmin() || (isAuthenticated() && request.auth.uid == userId);
+      allow update: if isAdmin() || isOwner(userId);
+      allow delete: if isAdmin();
+    }
+    
+    // Menu Items - Lectura para todos, escritura solo admin
+    match /menu_items/{itemId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+    
+    // Orders - Órdenes (mesas y para llevar)
+    // - Admin: control total
+    // - Waiter: crear, editar, eliminar sus órdenes
+    // - Kitchen: actualizar estado (preparing, ready) para items combi
+    // - Bar: actualizar estado (preparing, ready) para items bar
+    // - Cashier: actualizar estado (paid, confirmar pago) para TODAS las órdenes (mesa y para llevar)
+    match /orders/{orderId} {
+      allow read: if isAuthenticated();
+      allow create: if isAdmin() || isWaiter();
+      allow update: if isAdmin() || isWaiter() || isKitchen() || isBar() || isCashier();
+      allow delete: if isAdmin() || isWaiter();
+    }
+    
+    // Inventory - Inventario
+    // - Admin: control total
+    // - Waiter: puede ACTUALIZAR (para descontar ingredientes al crear/entregar órdenes)
+    // - Otros roles: solo lectura
+    match /inventory/{itemId} {
+      allow read: if isAuthenticated();
+      allow create: if isAdmin();
+      allow update: if isAdmin() || isWaiter();
+      allow delete: if isAdmin();
+    }
+    
+    // Inventory Movements - Movimientos de inventario (entrada/salida)
+    // - Todos los autenticados pueden crear (para registrar movimientos)
+    // - Solo admin puede modificar/eliminar
+    match /inventory_movements/{movementId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update, delete: if isAdmin();
+    }
+    
+    // Shifts - Turnos de caja
+    // - Todos pueden leer y crear
+    // - Admin o dueño del turno pueden actualizar
+    match /shifts/{shiftId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update: if isAdmin() || isCashier() || isOwner(resource.data.userId);
+      allow delete: if isAdmin();
+    }
+    
+    // Tables - Mesas
+    // - Todos los autenticados pueden leer y escribir (waiter necesita actualizar estado)
+    match /tables/{tableId} {
+      allow read, write: if isAuthenticated();
+    }
+    
+    // Counters - Contadores transaccionales (p. ej. daily_orders_YYYYMMDD)
+    // - Todos los autenticados pueden leer y actualizar/crear: el contador
+    //   del día se crea con transaction.set() en la primera orden del día,
+    //   por lo que `create` es necesario además de `read` y `update`.
+    //   Sin esta regla, createOrder() sería rechazado (denegación por
+    //   defecto). No se permite borrar contadores.
+    match /counters/{counterId} {
+      allow read, create, update: if isAuthenticated();
+    }
+
+    // Daily Reports - Reportes diarios
+    // - Solo admin puede escribir
+    match /daily_reports/{reportId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+  }
+}

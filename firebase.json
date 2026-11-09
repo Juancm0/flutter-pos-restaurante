@@ -1,0 +1,23 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "sistema-eve-demo",
+          "appId": "TU-APP-ID-ANDROID",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "sistema-eve-demo",
+          "configurations": {
+            "android": "TU-APP-ID-ANDROID",
+            "ios": "TU-APP-ID-IOS",
+            "web": "TU-APP-ID-WEB"
+          }
+        }
+      }
+    }
+  }
+}
