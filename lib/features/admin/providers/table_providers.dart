@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/features/admin/data/models/table_model.dart';
-import 'package:sistema_eve/features/admin/data/repositories/table_repository.dart';
+import 'package:pos_restaurante/features/admin/data/models/table_model.dart';
+import 'package:pos_restaurante/features/admin/data/repositories/table_repository.dart';
 
 final tableRepositoryProvider = Provider<TableRepository>(
   (ref) => TableRepository(),

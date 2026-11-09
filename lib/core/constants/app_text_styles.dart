@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// Estilos de texto del sistema EVE
+/// Estilos de texto del POS Restaurante
 /// Usa Inter como fuente principal y Outfit para títulos grandes
 class AppTextStyles {
   // No se puede instanciar

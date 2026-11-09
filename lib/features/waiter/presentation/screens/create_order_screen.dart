@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/features/waiter/data/models/menu_item_model.dart';
-import 'package:sistema_eve/features/admin/providers/menu_providers.dart';
-import 'package:sistema_eve/features/admin/providers/category_providers.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/waiter/providers/order_providers.dart';
-import 'package:sistema_eve/core/widgets/app_text_field.dart';
-import 'package:sistema_eve/features/waiter/presentation/widgets/add_item_bottom_sheet.dart';
-import 'package:sistema_eve/features/waiter/presentation/widgets/create_order_floating_bar.dart';
-import 'package:sistema_eve/features/waiter/presentation/widgets/menu_item_card.dart';
-import 'package:sistema_eve/features/waiter/presentation/widgets/order_summary_sheet.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/features/waiter/data/models/menu_item_model.dart';
+import 'package:pos_restaurante/features/admin/providers/menu_providers.dart';
+import 'package:pos_restaurante/features/admin/providers/category_providers.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/waiter/providers/order_providers.dart';
+import 'package:pos_restaurante/core/widgets/app_text_field.dart';
+import 'package:pos_restaurante/features/waiter/presentation/widgets/add_item_bottom_sheet.dart';
+import 'package:pos_restaurante/features/waiter/presentation/widgets/create_order_floating_bar.dart';
+import 'package:pos_restaurante/features/waiter/presentation/widgets/menu_item_card.dart';
+import 'package:pos_restaurante/features/waiter/presentation/widgets/order_summary_sheet.dart';
 
 /// Pantalla para crear una nueva orden - Diseño "Sandwich" UI
 /// 1. Encabezado fijo con inputs colapsables

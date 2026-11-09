@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_sizes.dart';
-import 'package:sistema_eve/core/widgets/app_button.dart';
-import 'package:sistema_eve/core/widgets/app_text_field.dart';
-import 'package:sistema_eve/core/utils/validators.dart';
-import 'package:sistema_eve/features/admin/providers/user_management_providers.dart';
-import 'package:sistema_eve/features/auth/data/models/user_model.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_sizes.dart';
+import 'package:pos_restaurante/core/widgets/app_button.dart';
+import 'package:pos_restaurante/core/widgets/app_text_field.dart';
+import 'package:pos_restaurante/core/utils/validators.dart';
+import 'package:pos_restaurante/features/admin/providers/user_management_providers.dart';
+import 'package:pos_restaurante/features/auth/data/models/user_model.dart';
 
 /// Dialog para crear/editar usuarios
 class UserFormDialog extends ConsumerStatefulWidget {

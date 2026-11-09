@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/features/admin/data/models/category_model.dart';
+import 'package:pos_restaurante/features/admin/data/models/category_model.dart';
 
 /// Stream provider para categorías del menú
 final categoriesStreamProvider = StreamProvider<List<CategoryModel>>((ref) {

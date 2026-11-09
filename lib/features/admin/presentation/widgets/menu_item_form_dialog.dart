@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_sizes.dart';
-import 'package:sistema_eve/core/constants/sections.dart';
-import 'package:sistema_eve/core/widgets/app_button.dart';
-import 'package:sistema_eve/core/widgets/app_text_field.dart';
-import 'package:sistema_eve/core/utils/validators.dart';
-import 'package:sistema_eve/features/admin/providers/menu_providers.dart';
-import 'package:sistema_eve/features/admin/providers/inventory_providers.dart';
-import 'package:sistema_eve/features/admin/providers/category_providers.dart';
-import 'package:sistema_eve/features/waiter/data/models/menu_item_model.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_sizes.dart';
+import 'package:pos_restaurante/core/constants/sections.dart';
+import 'package:pos_restaurante/core/widgets/app_button.dart';
+import 'package:pos_restaurante/core/widgets/app_text_field.dart';
+import 'package:pos_restaurante/core/utils/validators.dart';
+import 'package:pos_restaurante/features/admin/providers/menu_providers.dart';
+import 'package:pos_restaurante/features/admin/providers/inventory_providers.dart';
+import 'package:pos_restaurante/features/admin/providers/category_providers.dart';
+import 'package:pos_restaurante/features/waiter/data/models/menu_item_model.dart';
 
 /// Dialog para crear/editar items del menú
 class MenuItemFormDialog extends ConsumerStatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/features/waiter/data/models/menu_item_model.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/features/waiter/data/models/menu_item_model.dart';
 
 /// Bottom sheet para agregar un item al carrito con cantidad y notas
 class AddItemBottomSheet extends StatefulWidget {

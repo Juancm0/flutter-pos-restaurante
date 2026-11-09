@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:sistema_eve/core/constants/firebase_constants.dart';
-import 'package:sistema_eve/features/waiter/data/models/menu_item_model.dart';
+import 'package:pos_restaurante/core/constants/firebase_constants.dart';
+import 'package:pos_restaurante/features/waiter/data/models/menu_item_model.dart';
 
 /// Repositorio para gestión de menú
 class MenuRepository {

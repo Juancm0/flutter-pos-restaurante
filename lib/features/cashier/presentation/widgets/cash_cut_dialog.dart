@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/features/auth/providers/auth_providers.dart';
-import 'package:sistema_eve/features/cashier/providers/cashier_providers.dart';
-import 'package:sistema_eve/features/cashier/services/cash_cut_pdf_generator.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/features/auth/providers/auth_providers.dart';
+import 'package:pos_restaurante/features/cashier/providers/cashier_providers.dart';
+import 'package:pos_restaurante/features/cashier/services/cash_cut_pdf_generator.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
 
 /// Diálogo para realizar corte de caja
 class CashCutDialog extends ConsumerStatefulWidget {

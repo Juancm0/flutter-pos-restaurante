@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sistema_eve/features/admin/presentation/widgets/period_selector.dart';
-import 'package:sistema_eve/features/admin/providers/reports_providers.dart';
-import 'package:sistema_eve/features/admin/utils/report_csv_generator.dart';
+import 'package:pos_restaurante/features/admin/presentation/widgets/period_selector.dart';
+import 'package:pos_restaurante/features/admin/providers/reports_providers.dart';
+import 'package:pos_restaurante/features/admin/utils/report_csv_generator.dart';
 
 /// Tests de la exportación CSV: mismas columnas y datos que el PDF
 /// (`report_pdf_generator.dart`). Solo cubren la generación del texto CSV;

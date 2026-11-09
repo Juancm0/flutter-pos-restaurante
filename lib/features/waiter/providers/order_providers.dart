@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/firebase_constants.dart';
-import 'package:sistema_eve/core/utils/prep_time_calculator.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/waiter/data/repositories/order_repository.dart';
-import 'package:sistema_eve/features/admin/providers/inventory_providers.dart';
-import 'package:sistema_eve/features/admin/providers/table_providers.dart';
-import 'package:sistema_eve/features/auth/providers/auth_providers.dart';
+import 'package:pos_restaurante/core/constants/firebase_constants.dart';
+import 'package:pos_restaurante/core/utils/prep_time_calculator.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/waiter/data/repositories/order_repository.dart';
+import 'package:pos_restaurante/features/admin/providers/inventory_providers.dart';
+import 'package:pos_restaurante/features/admin/providers/table_providers.dart';
+import 'package:pos_restaurante/features/auth/providers/auth_providers.dart';
 
 /// Provider del OrderRepository
 final orderRepositoryProvider = Provider<OrderRepository>((ref) {

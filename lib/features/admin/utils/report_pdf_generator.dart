@@ -1,8 +1,8 @@
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
-import 'package:sistema_eve/features/admin/providers/reports_providers.dart';
-import 'package:sistema_eve/features/admin/presentation/widgets/period_selector.dart';
+import 'package:pos_restaurante/features/admin/providers/reports_providers.dart';
+import 'package:pos_restaurante/features/admin/presentation/widgets/period_selector.dart';
 
 /// Generador de reportes en PDF
 class ReportPDFGenerator {

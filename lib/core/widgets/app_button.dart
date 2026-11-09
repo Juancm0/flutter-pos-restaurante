@@ -9,7 +9,7 @@ enum AppButtonType { primary, secondary, success, warning, error, ghost }
 /// Tamaños de botón
 enum AppButtonSize { small, medium, large, xlarge }
 
-/// Botón personalizado del sistema EVE
+/// Botón personalizado del POS Restaurante
 /// Optimizado para uso táctil con mínimo 48dp de touch target
 class AppButton extends StatelessWidget {
   final String text;

@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_routes.dart';
-import 'package:sistema_eve/features/auth/providers/auth_providers.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_routes.dart';
+import 'package:pos_restaurante/features/auth/providers/auth_providers.dart';
 
 /// Splash Screen con verificación de autenticación
 class SplashScreen extends ConsumerStatefulWidget {
@@ -91,7 +91,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
 
             // Título
             const Text(
-              'Sistema EVE',
+              'POS Restaurante',
               style: TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,

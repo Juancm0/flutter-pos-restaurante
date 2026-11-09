@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/features/kitchen/providers/kitchen_providers.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/features/kitchen/providers/kitchen_providers.dart';
 
 /// Header con estadísticas de cocina
 /// Muestra contadores de órdenes pendientes y en preparación

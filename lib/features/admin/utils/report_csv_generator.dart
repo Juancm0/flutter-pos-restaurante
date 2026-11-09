@@ -3,8 +3,8 @@ import 'dart:io';
 import 'package:csv/csv.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:sistema_eve/features/admin/presentation/widgets/period_selector.dart';
-import 'package:sistema_eve/features/admin/providers/reports_providers.dart';
+import 'package:pos_restaurante/features/admin/presentation/widgets/period_selector.dart';
+import 'package:pos_restaurante/features/admin/providers/reports_providers.dart';
 
 /// Generador de reportes en CSV.
 ///
@@ -124,7 +124,7 @@ class ReportCSVGenerator {
     final directory = await getTemporaryDirectory();
     final file = File('${directory.path}/$fileName');
     await file.writeAsString(csvContent);
-    await Share.shareXFiles([XFile(file.path)], text: 'Reporte Sistema EVE');
+    await Share.shareXFiles([XFile(file.path)], text: 'Reporte POS Restaurante');
   }
 
   static String _fileDateSuffix() {

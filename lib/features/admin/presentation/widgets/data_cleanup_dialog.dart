@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/firebase_constants.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/firebase_constants.dart';
 
 /// Diálogo para limpiar datos antiguos
 class DataCleanupDialog extends StatefulWidget {

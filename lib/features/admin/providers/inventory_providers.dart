@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/features/admin/data/models/inventory_item_model.dart';
-import 'package:sistema_eve/features/admin/data/repositories/inventory_repository.dart';
+import 'package:pos_restaurante/features/admin/data/models/inventory_item_model.dart';
+import 'package:pos_restaurante/features/admin/data/repositories/inventory_repository.dart';
 
 /// Provider del repositorio
 final inventoryRepositoryProvider = Provider<InventoryRepository>((ref) {

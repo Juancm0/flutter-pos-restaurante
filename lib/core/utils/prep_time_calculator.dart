@@ -1,4 +1,4 @@
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
 
 /// Calculadora de tiempo estimado de preparación
 /// Considera cantidad de items usando multiplicador simple

@@ -1,4 +1,4 @@
-# Sistema EVE
+# POS Restaurante
 
 Aplicación Android de punto de venta para restaurantes y negocios de
 comida rápida, desarrollada en Flutter con Firebase. La uso todos los

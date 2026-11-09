@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
 import '../constants/app_sizes.dart';
 
-/// Card personalizada del sistema EVE
+/// Card personalizada del POS Restaurante
 /// Con bordes redondeados, padding consistente y soporte para gestos
 class AppCard extends StatelessWidget {
   final Widget? child;

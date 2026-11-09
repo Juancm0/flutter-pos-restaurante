@@ -1,14 +1,14 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_routes.dart';
-import 'package:sistema_eve/core/constants/sections.dart';
-import 'package:sistema_eve/core/utils/business_day.dart';
-import 'package:sistema_eve/features/auth/providers/auth_providers.dart';
-import 'package:sistema_eve/features/cashier/providers/cashier_providers.dart';
-import 'package:sistema_eve/features/cashier/presentation/widgets/paid_orders_tab.dart';
-import 'package:sistema_eve/features/cashier/presentation/widgets/pending_payments_tab.dart';
-import 'package:sistema_eve/features/cashier/presentation/widgets/cash_cut_dialog.dart';
+import 'package:pos_restaurante/core/constants/app_routes.dart';
+import 'package:pos_restaurante/core/constants/sections.dart';
+import 'package:pos_restaurante/core/utils/business_day.dart';
+import 'package:pos_restaurante/features/auth/providers/auth_providers.dart';
+import 'package:pos_restaurante/features/cashier/providers/cashier_providers.dart';
+import 'package:pos_restaurante/features/cashier/presentation/widgets/paid_orders_tab.dart';
+import 'package:pos_restaurante/features/cashier/presentation/widgets/pending_payments_tab.dart';
+import 'package:pos_restaurante/features/cashier/presentation/widgets/cash_cut_dialog.dart';
 
 /// Dashboard de Caja
 /// Funcionalidades:

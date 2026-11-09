@@ -1,5 +1,5 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
 
 /// Servicio para manejar notificaciones locales
 class NotificationService {

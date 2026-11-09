@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/firebase_constants.dart';
-import 'package:sistema_eve/core/constants/sections.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/admin/presentation/widgets/period_selector.dart';
+import 'package:pos_restaurante/core/constants/firebase_constants.dart';
+import 'package:pos_restaurante/core/constants/sections.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/admin/presentation/widgets/period_selector.dart';
 
 /// Filtro de sección para reportes
 /// null = todas las secciones

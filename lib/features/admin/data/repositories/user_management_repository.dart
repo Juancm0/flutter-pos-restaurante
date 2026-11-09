@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:sistema_eve/core/constants/firebase_constants.dart';
-import 'package:sistema_eve/features/auth/data/models/user_model.dart';
+import 'package:pos_restaurante/core/constants/firebase_constants.dart';
+import 'package:pos_restaurante/features/auth/data/models/user_model.dart';
 
 /// Repositorio para gestión de usuarios (Admin)
 class UserManagementRepository {

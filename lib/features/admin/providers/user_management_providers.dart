@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/features/admin/data/repositories/user_management_repository.dart';
-import 'package:sistema_eve/features/auth/data/models/user_model.dart';
+import 'package:pos_restaurante/features/admin/data/repositories/user_management_repository.dart';
+import 'package:pos_restaurante/features/auth/data/models/user_model.dart';
 
 /// Provider del repositorio
 final userManagementRepositoryProvider = Provider<UserManagementRepository>((

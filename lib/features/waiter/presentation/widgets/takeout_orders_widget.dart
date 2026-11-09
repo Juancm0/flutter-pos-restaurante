@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/waiter/providers/order_providers.dart';
-import 'package:sistema_eve/features/waiter/presentation/screens/create_order_screen.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/waiter/providers/order_providers.dart';
+import 'package:pos_restaurante/features/waiter/presentation/screens/create_order_screen.dart';
 
 /// Widget que muestra las órdenes para llevar del mesero
 class TakeoutOrdersWidget extends ConsumerWidget {

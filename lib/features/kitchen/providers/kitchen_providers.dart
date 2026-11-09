@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:sistema_eve/core/constants/firebase_constants.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/waiter/providers/order_providers.dart';
+import 'package:pos_restaurante/core/constants/firebase_constants.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/waiter/providers/order_providers.dart';
 
 /// Provider para órdenes pendientes de COCINA (sección combi pendiente)
 /// Filtra por sectionStatus.combi = 'pending'

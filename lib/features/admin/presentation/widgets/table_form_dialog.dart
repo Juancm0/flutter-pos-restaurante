@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_sizes.dart';
-import 'package:sistema_eve/core/constants/sections.dart';
-import 'package:sistema_eve/core/widgets/app_button.dart';
-import 'package:sistema_eve/core/widgets/app_text_field.dart';
-import 'package:sistema_eve/features/admin/data/models/table_model.dart';
-import 'package:sistema_eve/features/admin/providers/table_providers.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_sizes.dart';
+import 'package:pos_restaurante/core/constants/sections.dart';
+import 'package:pos_restaurante/core/widgets/app_button.dart';
+import 'package:pos_restaurante/core/widgets/app_text_field.dart';
+import 'package:pos_restaurante/features/admin/data/models/table_model.dart';
+import 'package:pos_restaurante/features/admin/providers/table_providers.dart';
 
 /// Dialog para crear/editar mesas
 class TableFormDialog extends ConsumerStatefulWidget {

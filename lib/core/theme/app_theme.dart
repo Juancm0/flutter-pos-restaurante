@@ -4,7 +4,7 @@ import '../constants/app_colors.dart';
 import '../constants/app_sizes.dart';
 import '../constants/app_text_styles.dart';
 
-/// Tema principal de la aplicación Sistema EVE
+/// Tema principal de la aplicación POS Restaurante
 /// Soporta dark y light mode, con dark como principal
 class AppTheme {
   // No se puede instanciar

@@ -1,4 +1,4 @@
-/// Rutas de navegación del sistema EVE
+/// Rutas de navegación del POS Restaurante
 class AppRoutes {
   // No se puede instanciar
   AppRoutes._();

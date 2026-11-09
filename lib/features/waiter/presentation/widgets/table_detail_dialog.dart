@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/features/admin/data/models/table_model.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/waiter/presentation/widgets/table_status_helpers.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/features/admin/data/models/table_model.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/waiter/presentation/widgets/table_status_helpers.dart';
 
 /// Diálogo de detalle de una mesa ocupada.
 ///

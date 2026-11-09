@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_routes.dart';
-import 'package:sistema_eve/features/auth/providers/auth_providers.dart';
-import 'package:sistema_eve/features/kitchen/providers/kitchen_providers.dart';
-import 'package:sistema_eve/features/kitchen/presentation/widgets/kitchen_header_stats.dart';
-import 'package:sistema_eve/features/kitchen/presentation/widgets/kitchen_order_card.dart';
-import 'package:sistema_eve/features/kitchen/services/kitchen_audio_service.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_routes.dart';
+import 'package:pos_restaurante/features/auth/providers/auth_providers.dart';
+import 'package:pos_restaurante/features/kitchen/providers/kitchen_providers.dart';
+import 'package:pos_restaurante/features/kitchen/presentation/widgets/kitchen_header_stats.dart';
+import 'package:pos_restaurante/features/kitchen/presentation/widgets/kitchen_order_card.dart';
+import 'package:pos_restaurante/features/kitchen/services/kitchen_audio_service.dart';
 
 /// Dashboard de Cocina
 /// Funcionalidades:

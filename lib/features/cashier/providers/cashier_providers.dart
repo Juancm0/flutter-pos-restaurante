@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sistema_eve/core/constants/firebase_constants.dart';
-import 'package:sistema_eve/core/constants/sections.dart';
-import 'package:sistema_eve/core/utils/business_day.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/admin/data/repositories/inventory_repository.dart';
-import 'package:sistema_eve/features/cashier/data/models/shift_model.dart';
+import 'package:pos_restaurante/core/constants/firebase_constants.dart';
+import 'package:pos_restaurante/core/constants/sections.dart';
+import 'package:pos_restaurante/core/utils/business_day.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/admin/data/repositories/inventory_repository.dart';
+import 'package:pos_restaurante/features/cashier/data/models/shift_model.dart';
 
 /// Provider para la sección seleccionada en caja
 /// null = todas las secciones

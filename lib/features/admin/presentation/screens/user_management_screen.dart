@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_sizes.dart';
-import 'package:sistema_eve/features/admin/providers/user_management_providers.dart';
-import 'package:sistema_eve/features/admin/presentation/widgets/user_form_dialog.dart';
-import 'package:sistema_eve/features/auth/data/models/user_model.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_sizes.dart';
+import 'package:pos_restaurante/features/admin/providers/user_management_providers.dart';
+import 'package:pos_restaurante/features/admin/presentation/widgets/user_form_dialog.dart';
+import 'package:pos_restaurante/features/auth/data/models/user_model.dart';
 
 /// Screen para gestión de usuarios
 class UserManagementScreen extends ConsumerWidget {

@@ -4,7 +4,7 @@ import '../constants/app_colors.dart';
 import '../constants/app_sizes.dart';
 import '../constants/app_text_styles.dart';
 
-/// Campo de texto personalizado del sistema EVE
+/// Campo de texto personalizado del POS Restaurante
 class AppTextField extends StatelessWidget {
   final String? label;
   final String? hint;

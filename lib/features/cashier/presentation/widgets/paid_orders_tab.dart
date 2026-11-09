@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/utils/business_day.dart';
-import 'package:sistema_eve/features/cashier/providers/cashier_providers.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/utils/business_day.dart';
+import 'package:pos_restaurante/features/cashier/providers/cashier_providers.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
 
 /// Tab de órdenes pagadas del día (desde el último corte).
 ///

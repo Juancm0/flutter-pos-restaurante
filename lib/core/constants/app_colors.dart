@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Paleta de colores del sistema EVE
+/// Paleta de colores del POS Restaurante
 /// Basado en diseño dark-first con acentos vibrantes
 class AppColors {
   // No se puede instanciar

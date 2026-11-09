@@ -1,4 +1,4 @@
-/// Tamaños, espaciados y dimensiones del sistema EVE
+/// Tamaños, espaciados y dimensiones del POS Restaurante
 class AppSizes {
   // No se puede instanciar
   AppSizes._();

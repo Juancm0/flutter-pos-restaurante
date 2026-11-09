@@ -40,7 +40,7 @@ void main() async {
   // Ejecutar app
   runApp(
     // ProviderScope es necesario para Riverpod
-    const ProviderScope(child: SistemaEveApp()),
+    const ProviderScope(child: PosRestauranteApp()),
   );
 }
 
@@ -68,7 +68,7 @@ class _FirebaseErrorAppState extends State<_FirebaseErrorApp> {
       debugPrint('✅ Firebase inicializado correctamente');
       // Éxito: arrancar la app normal.
       runApp(
-        const ProviderScope(child: SistemaEveApp()),
+        const ProviderScope(child: PosRestauranteApp()),
       );
     } catch (e) {
       debugPrint('❌ Error al inicializar Firebase: $e');
@@ -83,7 +83,7 @@ class _FirebaseErrorAppState extends State<_FirebaseErrorApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Sistema EVE',
+      title: 'POS Restaurante',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
       darkTheme: AppTheme.darkTheme,
@@ -105,13 +105,13 @@ class _FirebaseErrorAppState extends State<_FirebaseErrorApp> {
   }
 }
 
-class SistemaEveApp extends StatelessWidget {
-  const SistemaEveApp({super.key});
+class PosRestauranteApp extends StatelessWidget {
+  const PosRestauranteApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Sistema EVE',
+      title: 'POS Restaurante',
       debugShowCheckedModeBanner: false,
 
       // Tema oscuro (principal)

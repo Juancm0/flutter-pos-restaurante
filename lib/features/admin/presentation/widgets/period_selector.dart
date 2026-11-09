@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sistema_eve/core/utils/business_day.dart';
+import 'package:pos_restaurante/core/utils/business_day.dart';
 
 /// Período de tiempo para reportes
 enum ReportPeriod { today, week, month, custom }

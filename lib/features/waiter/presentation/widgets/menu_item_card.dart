@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/features/waiter/data/models/menu_item_model.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/features/waiter/data/models/menu_item_model.dart';
 
 /// Tarjeta de un producto del menú en la pantalla de crear orden.
 ///

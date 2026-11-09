@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:sistema_eve/core/constants/sections.dart';
+import 'package:pos_restaurante/core/constants/sections.dart';
 
 /// Modificador de un producto (ej: "Sin cebolla", "Extra queso")
 class ProductModifier {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/firebase_constants.dart';
-import 'package:sistema_eve/features/admin/presentation/widgets/data_cleanup_dialog.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/firebase_constants.dart';
+import 'package:pos_restaurante/features/admin/presentation/widgets/data_cleanup_dialog.dart';
 
 /// Drawer lateral para el dashboard del administrador
 class AdminDrawer extends StatelessWidget {
@@ -48,7 +48,7 @@ class AdminDrawer extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Sistema EVE',
+                  'POS Restaurante',
                   style: TextStyle(
                     color: Colors.white.withValues(alpha: 0.9),
                     fontSize: 14,

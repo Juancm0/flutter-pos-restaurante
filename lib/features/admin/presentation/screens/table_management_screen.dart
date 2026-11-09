@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_sizes.dart';
-import 'package:sistema_eve/core/constants/sections.dart';
-import 'package:sistema_eve/features/admin/providers/table_providers.dart';
-import 'package:sistema_eve/features/admin/presentation/widgets/table_form_dialog.dart';
-import 'package:sistema_eve/features/admin/data/models/table_model.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_sizes.dart';
+import 'package:pos_restaurante/core/constants/sections.dart';
+import 'package:pos_restaurante/features/admin/providers/table_providers.dart';
+import 'package:pos_restaurante/features/admin/presentation/widgets/table_form_dialog.dart';
+import 'package:pos_restaurante/features/admin/data/models/table_model.dart';
 
 /// Screen completa de gestión de mesas
 class TableManagementScreen extends ConsumerWidget {

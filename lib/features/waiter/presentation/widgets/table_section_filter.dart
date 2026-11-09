@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_sizes.dart';
-import 'package:sistema_eve/core/constants/sections.dart';
-import 'package:sistema_eve/features/waiter/presentation/widgets/table_status_helpers.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_sizes.dart';
+import 'package:pos_restaurante/core/constants/sections.dart';
+import 'package:pos_restaurante/features/waiter/presentation/widgets/table_status_helpers.dart';
 
 /// Icono de una sección de mesas (Combi / Bar).
 IconData getSectionIcon(Section section) {

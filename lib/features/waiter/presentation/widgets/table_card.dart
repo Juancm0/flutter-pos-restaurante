@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_sizes.dart';
-import 'package:sistema_eve/core/constants/firebase_constants.dart';
-import 'package:sistema_eve/features/admin/data/models/table_model.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/waiter/providers/order_providers.dart';
-import 'package:sistema_eve/features/waiter/presentation/screens/create_order_screen.dart';
-import 'package:sistema_eve/features/waiter/presentation/widgets/table_detail_dialog.dart';
-import 'package:sistema_eve/features/waiter/presentation/widgets/table_status_helpers.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_sizes.dart';
+import 'package:pos_restaurante/core/constants/firebase_constants.dart';
+import 'package:pos_restaurante/features/admin/data/models/table_model.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/waiter/providers/order_providers.dart';
+import 'package:pos_restaurante/features/waiter/presentation/screens/create_order_screen.dart';
+import 'package:pos_restaurante/features/waiter/presentation/widgets/table_detail_dialog.dart';
+import 'package:pos_restaurante/features/waiter/presentation/widgets/table_status_helpers.dart';
 
 /// Card individual de mesa con toda su información
 class TableCard extends ConsumerWidget {

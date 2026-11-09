@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'dart:async';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_sizes.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/waiter/providers/order_providers.dart';
-import 'package:sistema_eve/features/waiter/presentation/screens/create_order_screen.dart';
-import 'package:sistema_eve/features/waiter/presentation/screens/add_items_screen.dart';
-import 'package:sistema_eve/features/waiter/presentation/widgets/payment_dialog.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_sizes.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/waiter/providers/order_providers.dart';
+import 'package:pos_restaurante/features/waiter/presentation/screens/create_order_screen.dart';
+import 'package:pos_restaurante/features/waiter/presentation/screens/add_items_screen.dart';
+import 'package:pos_restaurante/features/waiter/presentation/widgets/payment_dialog.dart';
 
 /// Widget que muestra las órdenes activas del mesero
 class MyOrdersListWidget extends ConsumerStatefulWidget {

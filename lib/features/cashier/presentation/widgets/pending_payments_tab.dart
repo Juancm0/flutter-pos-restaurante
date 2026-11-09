@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/widgets/app_button.dart';
-import 'package:sistema_eve/features/auth/providers/auth_providers.dart';
-import 'package:sistema_eve/features/cashier/presentation/widgets/cashier_payment_dialog.dart';
-import 'package:sistema_eve/features/cashier/providers/cashier_providers.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/widgets/app_button.dart';
+import 'package:pos_restaurante/features/auth/providers/auth_providers.dart';
+import 'package:pos_restaurante/features/cashier/presentation/widgets/cashier_payment_dialog.dart';
+import 'package:pos_restaurante/features/cashier/providers/cashier_providers.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
 
 /// Tab de pagos pendientes de confirmación.
 ///

@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.sistemaeve" "\0"
-            VALUE "FileDescription", "sistema_eve" "\0"
+            VALUE "CompanyName", "com.juancm" "\0"
+            VALUE "FileDescription", "pos_restaurante" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "sistema_eve" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 com.sistemaeve. All rights reserved." "\0"
-            VALUE "OriginalFilename", "sistema_eve.exe" "\0"
-            VALUE "ProductName", "sistema_eve" "\0"
+            VALUE "InternalName", "pos_restaurante" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 com.juancm. All rights reserved." "\0"
+            VALUE "OriginalFilename", "pos_restaurante.exe" "\0"
+            VALUE "ProductName", "pos_restaurante" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

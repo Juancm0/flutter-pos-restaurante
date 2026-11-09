@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/sections.dart';
-import 'package:sistema_eve/features/admin/presentation/widgets/admin_drawer.dart';
-import 'package:sistema_eve/features/admin/presentation/widgets/period_selector.dart';
-import 'package:sistema_eve/features/admin/providers/reports_providers.dart';
-import 'package:sistema_eve/features/admin/utils/report_pdf_generator.dart';
-import 'package:sistema_eve/features/admin/utils/report_csv_generator.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/sections.dart';
+import 'package:pos_restaurante/features/admin/presentation/widgets/admin_drawer.dart';
+import 'package:pos_restaurante/features/admin/presentation/widgets/period_selector.dart';
+import 'package:pos_restaurante/features/admin/providers/reports_providers.dart';
+import 'package:pos_restaurante/features/admin/utils/report_pdf_generator.dart';
+import 'package:pos_restaurante/features/admin/utils/report_csv_generator.dart';
 
 /// Pantalla de reportes del administrador
 class ReportsScreen extends ConsumerStatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/features/admin/data/repositories/menu_repository.dart';
-import 'package:sistema_eve/features/waiter/data/models/menu_item_model.dart';
+import 'package:pos_restaurante/features/admin/data/repositories/menu_repository.dart';
+import 'package:pos_restaurante/features/waiter/data/models/menu_item_model.dart';
 
 /// Provider del repositorio
 final menuRepositoryProvider = Provider<MenuRepository>((ref) {

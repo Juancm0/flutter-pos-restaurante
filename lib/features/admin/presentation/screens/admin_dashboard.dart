@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/constants/app_routes.dart';
-import 'package:sistema_eve/features/auth/providers/auth_providers.dart';
-import 'package:sistema_eve/features/admin/presentation/screens/user_management_screen.dart';
-import 'package:sistema_eve/features/admin/presentation/screens/menu_management_screen.dart';
-import 'package:sistema_eve/features/admin/presentation/screens/inventory_management_screen.dart';
-import 'package:sistema_eve/features/admin/presentation/screens/table_management_screen.dart';
-import 'package:sistema_eve/features/admin/presentation/widgets/admin_drawer.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/constants/app_routes.dart';
+import 'package:pos_restaurante/features/auth/providers/auth_providers.dart';
+import 'package:pos_restaurante/features/admin/presentation/screens/user_management_screen.dart';
+import 'package:pos_restaurante/features/admin/presentation/screens/menu_management_screen.dart';
+import 'package:pos_restaurante/features/admin/presentation/screens/inventory_management_screen.dart';
+import 'package:pos_restaurante/features/admin/presentation/screens/table_management_screen.dart';
+import 'package:pos_restaurante/features/admin/presentation/widgets/admin_drawer.dart';
 
 /// Dashboard del Administrador con tabs
 class AdminDashboard extends ConsumerStatefulWidget {

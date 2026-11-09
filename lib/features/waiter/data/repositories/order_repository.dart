@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:sistema_eve/core/constants/firebase_constants.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/admin/data/repositories/inventory_repository.dart';
-import 'package:sistema_eve/features/admin/data/repositories/table_repository.dart';
+import 'package:pos_restaurante/core/constants/firebase_constants.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/admin/data/repositories/inventory_repository.dart';
+import 'package:pos_restaurante/features/admin/data/repositories/table_repository.dart';
 
 /// REGLA DE DESCUENTO DE INVENTARIO (cambio P0, nov 2026):
 /// el stock de una orden se descuenta UNA sola vez, al confirmar el pago

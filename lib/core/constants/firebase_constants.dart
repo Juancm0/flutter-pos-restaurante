@@ -17,6 +17,6 @@ class FirebaseConstants {
   static const String defaultBranchId = 'main';
 
   // Configuración de la app
-  static const String appName = 'Sistema EVE';
+  static const String appName = 'POS Restaurante';
   static const String appVersion = '1.0.0';
 }

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sistema_eve/core/constants/app_colors.dart';
-import 'package:sistema_eve/core/utils/prep_time_calculator.dart';
-import 'package:sistema_eve/features/waiter/data/models/order_model.dart';
-import 'package:sistema_eve/features/kitchen/presentation/widgets/timer_badge.dart';
-import 'package:sistema_eve/features/kitchen/presentation/widgets/section_status_chip.dart';
-import 'package:sistema_eve/features/bar/providers/bar_providers.dart';
+import 'package:pos_restaurante/core/constants/app_colors.dart';
+import 'package:pos_restaurante/core/utils/prep_time_calculator.dart';
+import 'package:pos_restaurante/features/waiter/data/models/order_model.dart';
+import 'package:pos_restaurante/features/kitchen/presentation/widgets/timer_badge.dart';
+import 'package:pos_restaurante/features/kitchen/presentation/widgets/section_status_chip.dart';
+import 'package:pos_restaurante/features/bar/providers/bar_providers.dart';
 
 /// Card de orden para vista de BARRA
 /// Solo muestra items de sección "bar"
